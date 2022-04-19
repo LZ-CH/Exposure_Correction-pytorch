@@ -43,8 +43,8 @@ python mspec_train.py --use_advloss
 ```
 
 ## test
-1. 可以直接下载本人在无对抗损失下训练好的checkpoint[baidu clound password: 1234](https://pan.baidu.com/s/1GlXrhQfdasCPStcPp5ahyQ)
-2. 也可以自己训练得到checkpoint
+1. 可以直接下载本人在无对抗损失下训练好的checkpoint:[baidu clound password: 1234](https://pan.baidu.com/s/1GlXrhQfdasCPStcPp5ahyQ)
+2. 也可以自己训练得到模型
 3. 然后运行以下命令进行测试验证:
 ```
 python mspec_test.py
