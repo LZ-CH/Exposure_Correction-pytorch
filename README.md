@@ -1,6 +1,10 @@
 # Exposure_Correction-pytorch
     此项目为CVPR2021关于图像光照修正领域的论文[Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf)的非官方pytorch复现代码；
-    前些日子里阅读到了这篇十分有趣的论文[Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf)，本想基于其源代码进行修改，但是该论文的官方代码是MATLAB实现的，对于一个pytorch惯用者来说，难免有点不顺手，因此本人花了一些时间对该论文采用pytorch框架进行了简单复现；在不采用原MATLAB代码中使用的 Bilateral Guided Upsampling (bgu)上采样方式而直接采用简单的上采样方式对预测结果进行处理，复现结果为psnr: 19.756，ssim: 0.749；若采用后，复现结果为psnr: 20.313 SSIM: 0.863；(原论文在相同方式下:psnr: 20.205，ssim: 0.769)
+    
+    前些日子里阅读到了这篇十分有趣的论文[Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf)，本想基于其源代码进行修改，但是该论
+文的官方代码是MATLAB实现的，对于一个pytorch惯用者来说，难免有点不顺手，因此本人花了一些时间对该论文采用pytorch框架进行了简单复现；在不采用原MATLAB代码中使用的 
+Bilateral Guided Upsampling (bgu)上采样方式而直接采用简单的上采样方式对预测结果进行处理，复现结果为psnr: 19.756，ssim: 0.749；若采用后，复现结果为psnr: 20.313 
+SSIM: 0.863；(原论文在相同方式下:psnr: 20.205，ssim: 0.769)
     
 
 ## Folder structure
