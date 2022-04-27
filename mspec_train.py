@@ -63,7 +63,7 @@ def train(config):
 		Dnet.train()
 		d_loss = D_loss()
 		
-	for i in range(config.start[0],3):
+	for i in range(0,3):
 		print(i)
 		train_dataset = dataloader.dataloader(config.input_images_path,config.nomal_images_path,size=config.sizelist[i])	
 		train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=config.train_batch_size_list[i], shuffle=True, num_workers=config.num_workers, pin_memory=True)
@@ -79,7 +79,7 @@ def train(config):
 				if config.use_advloss:
 					config.D_lr = 0.5*config.D_lr
 					D_optimizer = torch.optim.Adam(Dnet.parameters(),lr=config.D_lr,weight_decay=config.weight_decay)
-			if epoch < config.start[1]:
+			if i<config.start[0] or (i==config.start[0] and epoch<config.start[1]):
 				continue
 			for iteration, (lowlight_L_list,T_list) in enumerate(train_loader):
 				lowlight_L_list = [data.cuda() for data in lowlight_L_list]
