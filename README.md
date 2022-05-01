@@ -56,5 +56,10 @@ python mspec_train.py --use_advloss
 ```
 python mspec_test.py
 ```
+
+## bgu
+
+在测试阶段，如果需要采用bgu上采样方式来替代mspec_test中默认的插值resize方式，则需要运行[run_bgu.m](Image_upsample_tools/run_bgu.m)代码来进行后续的上采样。
+
 ## Contact information
 E-mail: 2443976970@qq.com
