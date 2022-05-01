@@ -26,11 +26,11 @@ Exposure_Correction-pytorch
 2. Pytorch 1.9.1
 3. numpy   1.21.0
 如果你的cuda版本为11.1，也可以直接通过以下方式配置环境:
-'''
+```
 conda create -n mspec_env python==3.8
 conda activate mspec_env
 pip install -r requirements.txt
-'''
+```
 ## prepare data
 1. 首先从[官方github仓库](https://github.com/mahmoudnafifi/Exposure_Correction)中下载[Training](https://ln2.sync.com/dl/141f68cf0/mrt3jtm9-ywbdrvtw-avba76t4-w6fw8fzj)|[Validation](https://ln2.sync.com/dl/49a6738c0/3m3imxpe-w6eqiczn-vripaqcf-jpswtcfr)|[Testing](https://ln2.sync.com/dl/098a6c5e0/cienw23w-usca2rgh-u5fxikex-q7vydzkp) 等数据集
 2. 将数据集按照文件夹结果放置在该项目的根目录下
