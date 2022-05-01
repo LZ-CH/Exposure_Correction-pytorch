@@ -25,6 +25,7 @@ Exposure_Correction-pytorch
 1. Python  3.8.0
 2. Pytorch 1.9.1
 3. numpy   1.21.0
+
 If your cuda version is 11.1, you can also configure the environment directly by:
 ```
 conda create -n mspec_env python==3.8
