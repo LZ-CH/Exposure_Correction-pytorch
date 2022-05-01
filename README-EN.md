@@ -57,5 +57,9 @@ python mspec_train.py --use_advloss
 ```
 python mspec_test.py
 ```
+
+## bgu
+In the testing phase, if you need to use bgu upsampling to replace the default interpolation resize in mspec_test, you need to run the [run_bgu.m](Image_upsample_tools/run_bgu.m) code for subsequent upsampling.
+
 ## Contact information
 E-mail: 2443976970@qq.com
