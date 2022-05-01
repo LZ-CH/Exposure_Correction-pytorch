@@ -3,7 +3,7 @@
 
 此项目为CVPR2021关于图像光照修正领域的论文[Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf)的非官方pytorch复现代码；
     
-前些日子里阅读到了这篇十分有趣的论文[Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf)，本想基于其源代码进行修改，但是该论文的官方代码是MATLAB实现的，对于一个pytorch惯用者来说，难免有点不顺手，因此本人花了一些时间对该论文采用pytorch框架进行了简单复现；在不采用原MATLAB代码中使用的Bilateral Guided Upsampling (bgu)上采样方式而直接采用简单的上采样方式对预测结果进行处理，复现结果为psnr: 19.756，ssim: 0.749；若采用后，复现结果为psnr: 20.313，SSIM: 0.863；(原论文在相同方式下:psnr: 20.205，ssim: 0.769)
+前些日子里阅读到了这篇十分有趣的论文[Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf)，本想基于其源代码进行修改，但是该论文的官方代码是MATLAB实现的，对于一个pytorch惯用者来说，难免有点不顺手，因此本人花了一些时间对该论文采用pytorch框架进行了简单复现；在不采用原MATLAB代码中使用的[Bilateral Guided Upsampling (bgu)](Image_upsample_tools/run_bgu.m)上采样方式而直接采用简单的上采样方式对预测结果进行处理，复现结果为psnr: 19.756，ssim: 0.749；若采用[bgu](Image_upsample_tools/run_bgu.m)后，复现结果为psnr: 20.313，SSIM: 0.863；(原论文在相同方式下:psnr: 20.205，ssim: 0.769)
     
 
 ## Folder structure
@@ -25,7 +25,12 @@ Exposure_Correction-pytorch
 1. Python  3.8.0
 2. Pytorch 1.9.1
 3. numpy   1.21.0
-
+如果你的cuda版本为11.1，也可以直接通过以下方式配置环境:
+'''
+conda create -n mspec_env python==3.8
+conda activate mspec_env
+pip install -r requirements.txt
+'''
 ## prepare data
 1. 首先从[官方github仓库](https://github.com/mahmoudnafifi/Exposure_Correction)中下载[Training](https://ln2.sync.com/dl/141f68cf0/mrt3jtm9-ywbdrvtw-avba76t4-w6fw8fzj)|[Validation](https://ln2.sync.com/dl/49a6738c0/3m3imxpe-w6eqiczn-vripaqcf-jpswtcfr)|[Testing](https://ln2.sync.com/dl/098a6c5e0/cienw23w-usca2rgh-u5fxikex-q7vydzkp) 等数据集
 2. 将数据集按照文件夹结果放置在该项目的根目录下
