@@ -27,9 +27,9 @@ def is_discard(rawimg):
 
 if __name__ =='__main__':
     Pnum_per_img = 20
-    input_image_path = './MultiExposure_dataset/training/INPUT_IMAGES'
-    gt_image_path = './MultiExposure_dataset/training/GT_IMAGES'
-    save_dir = './MultiExposure_dataset/training/Patchs'
+    input_image_path = '../MultiExposure_dataset/training/INPUT_IMAGES'
+    gt_image_path = '../MultiExposure_dataset/training/GT_IMAGES'
+    save_dir = '../MultiExposure_dataset/training/Patchs'
     patch_input = os.path.join(save_dir,'INPUT_IMAGES')
     patch_gt = os.path.join(save_dir,'GT_IMAGES')
     if not os.path.exists(save_dir):
