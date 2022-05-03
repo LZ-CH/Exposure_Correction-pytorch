@@ -112,7 +112,6 @@ def train(config):
 					loss_group = {'rec_loss':rec_loss.item(),'pyr_loss':pyr_loss.item()}
 				loss.backward()
 				optimizer.step()
-				print(loss_group)
 
 			torchvision.utils.save_image(Y_list[-1][:,[2,1,0],:,:],'./run-out/'+config.train_mode+'/train_output4.jpg')
 			torchvision.utils.save_image(Y_list[0][:,[2,1,0],:,:],'./run-out/'+config.train_mode+'/train_output1.jpg')
