@@ -1,5 +1,5 @@
 # Exposure_Correction-pytorch
-English | [简体中文](README.md)
+English | [简体中文](README-CN.md)
 
 This project is the unofficial pytorch reproduction code of the CVPR2021 paper on the field of image illumination correction [Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf);
     
