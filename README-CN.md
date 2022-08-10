@@ -1,5 +1,5 @@
 # Exposure_Correction-pytorch
-[English](README-EN.md) | 简体中文
+[English](README.md) | 简体中文
 
 此项目为CVPR2021关于图像光照修正领域的论文[Learning Multi-Scale Photo Exposure Correction.](https://arxiv.org/pdf/2003.11596.pdf)的非官方pytorch复现代码；
     
