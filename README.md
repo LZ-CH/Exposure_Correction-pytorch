@@ -51,7 +51,7 @@ python mspec_train.py --use_advloss
 ```
 
 ## test
-1. You can directly download the checkpoint that I trained without adversarial loss: [baidu clound password: 1234](https://pan.baidu.com/s/1GlXrhQfdasCPStcPp5ahyQ)
+1. You can directly download the checkpoint that I trained without adversarial loss: [baidu clound password: 1234](https://pan.baidu.com/s/1GlXrhQfdasCPStcPp5ahyQ) or unzip snapshots.zip
 2. You can also train the model yourself
 3. Then run the following command for test verification:
 ```
