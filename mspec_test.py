@@ -21,7 +21,6 @@ from tools.calculate_psnr_ssim import calculate_psnr_ssim
 from tiler import Tiler, Merger
 import random
 from tiling import ConstSizeTiles
-from Bilateral_Guided_Upsampling.main import wrapper
 os.environ['CUDA_VISIBLE_DEVICES']='0'
 def exposure_correction(MSPEC_net,data_input):
 	if data_input.dtype == 'uint8':
